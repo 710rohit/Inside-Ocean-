@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background:linear-gradient(to top,#2304c7,#00c5ff);
+        }
+        section{
+            height: 100vh;
+        }
+        #bubbles{
+            height: 100%;
+            width: 100%;
+        }
+        #fish1{
+         position: absolute;
+         height: 250px;
+         top:30%;
+         animation: fish1 15s linear infinite;
+         opacity: .8;
+        }
+        #fish5{
+            position: absolute;
+         height: 250px;
+         top:30%;
+         animation: fish1 8s linear infinite;
+         opacity: .4;
+        }
+        #fish2{
+            position: absolute;
+         height: 80px;
+         top:60%;
+         opacity: .9;
+         animation:fish2 11s linear infinite;
+         
+        }
+        #fish3{
+            position: absolute;
+         height: 100px;
+         top:10%;
+         opacity: .6;
+         animation:fish2 11s linear infinite;
+        }
+        #diver{
+            position: absolute;
+         height: 80px;
+         top:3%;
+         opacity: .6;
+         animation:diver 23s linear infinite;
+        }
+
+        
+        #fish4{
+            position: absolute;
+        
+         top:60%;
+         opacity:.8;
+         animation:fish4 25s linear infinite;
+        }
+
+        @keyframes fish4 {
+            10%{
+                transform: translateY(-100px);
+                right: -2000px;
+            }
+            25%{
+                transform: translateY(0px);
+
+            }
+            50%{
+                transform: translateY(-70px);
+
+            }
+            75%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(-70px);
+                right: 1500px;
+            }}
+        @keyframes fish2 {
+            10%{
+                transform: translateY(-100px);
+                right: -80px;
+            }
+            25%{
+                transform: translateY(0px);
+
+            }
+            50%{
+                transform: translateY(-70px);
+
+            }
+            75%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(-70px);
+                right: 2000px;
+            }}
+        
+        @keyframes fish1 {
+            10%{
+                transform: translateY(-70px);
+                left: -400px;
+            }
+            25%{
+                transform: translateY(0px);
+
+            }
+            50%{
+                transform: translateY(-70px);
+
+            }
+            75%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(-70px);
+                left: 1800px;
+            }
+        }
+        @keyframes diver {
+            10%{
+                transform: translateZ(-70px);
+                left: -80px;
+            }
+            25%{
+                transform: translateY(120px);
+
+            }
+            50%{
+                transform: translateY(-70px);
+
+            }
+            75%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(-70px);
+                left: 1800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="bubbles">
+           <img id="fish1" src="./images/fish 4.png" alt="" srcset="">
+           <img id="fish2" src="./images/fish_1-removebg-preview.png" alt="" srcset="">
+           <img id="fish3" src="./images/fish_5-removebg-preview.png" alt="" srcset="">
+           <img id="fish4" src="./images/fish 6.png" alt="" srcset="">
+           <img id="fish5" src="./images/fish_7-removebg-preview.png" alt="" srcset="">
+           <img id="diver" src="./images/diver 2.png" alt="" srcset="">
+        </div>
+    </section>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
